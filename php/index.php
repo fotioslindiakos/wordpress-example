@@ -22,7 +22,7 @@ $_secure_tokens = array(
 
 print "<table>";
 foreach ($_secure_tokens as $key) {
-  printf ("<tr><td>%s</td></tr>",$key);
+  printf ("<tr><td>%s</td><td>%s</td></tr>",$key,$$key);
 }
 print "</table>";
 
