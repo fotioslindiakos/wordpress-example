@@ -17,7 +17,14 @@ define('WP_USE_THEMES', true);
 require('./wp-blog-header.php');
 
 $_secure_tokens = array(
-  'AUTH_KEY'
+  'AUTH_KEY',
+  'SECURE_AUTH_KEY',
+  'LOGGED_IN_KEY',
+  'NONCE_KEY',
+  'AUTH_SALT',
+  'SECURE_AUTH_SALT',
+  'LOGGED_IN_SALT',
+  'NONCE_SALT'
 );
 
 print "<table>";
