@@ -15,4 +15,15 @@ define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
 require('./wp-blog-header.php');
+
+$_secure_tokens = array(
+  'AUTH_KEY'
+);
+
+print "<table>";
+foreach ($_secure_tokens as $key) {
+  printf ("<tr><td>%s</td></tr>",$key);
+}
+print "</table>";
+
 ?>
