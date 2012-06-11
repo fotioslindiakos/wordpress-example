@@ -20,9 +20,10 @@ $_secure_tokens = array(
   'AUTH_KEY'
 );
 
+$a = get_defined_vars();
 print "<table>";
 foreach ($_secure_tokens as $key) {
-  printf ("<tr><td>%s</td><td>%s</td></tr>",$key,$$key);
+  printf ("<tr><td>%s</td><td>%s</td></tr>",$key,$a[$key]);
 }
 print "</table>";
 
